@@ -168,9 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.divnav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #c0c0c0;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+  padding: 1.5rem;
 }
 .footer {
   width: 100%;
@@ -243,4 +253,29 @@ button {
   height: 4rem;
   width: 20rem;
   font-weight: 750;
+}
+@media (max-width: 500px) {
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  body .divnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

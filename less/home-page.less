@@ -73,5 +73,31 @@ button {
   height: 4rem;
   width: 20rem;
   font-weight: 750;
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+
+    .divnav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .content-pick:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 // home
